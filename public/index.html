@@ -37,13 +37,13 @@
         <form name="mean" method="POST" data-netlify="true" data-netlify-recaptcha="true">
             <div class="nes-field">
                 <label for="email_field">What is your email?</label>
-                <input required type="email" id="email_field" class="nes-input is-dark">
+                <input required type="email" id="email_field" name="email" class="nes-input is-dark">
             </div>
             <br>
             <div class="nes-field">
                 <div class="nes-select is-dark">
                     <label for="select" id="select_label">Which is your favorite?</label>
-                    <select required id="select">
+                    <select name="framework" required id="select">
                         <option value="Svelte">Svelte</option>
                         <option value="React">React</option>
                         <option value="Vue">Vue</option>
@@ -56,7 +56,7 @@
             <br>
             <div class="nes-field">
                 <label for="textarea_field">Thoughts on anything?</label>
-                <textarea required id="textarea_field" class="nes-textarea is-dark"></textarea>
+                <textarea name="thoughts" required id="textarea_field" class="nes-textarea is-dark"></textarea>
             </div>
             <br>
             <div data-netlify-recaptcha="true"></div>
