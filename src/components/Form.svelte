@@ -4,7 +4,10 @@
     export let isDark;
 </script>
 
-<form name="nice" method="POST" netlify>
+<form name="nice" method="POST" netlify netlify-honeypot="bot-field">
+    <p style="display: none">
+        <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+    </p>
     <Input label="How are you today?" {isDark} />
     <Textarea label="Thoughts on Svelte?" {isDark} />
     <Textarea label="Thoughts on my videos?" {isDark} />
