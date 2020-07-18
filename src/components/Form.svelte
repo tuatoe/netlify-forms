@@ -4,7 +4,7 @@
     export let isDark;
 </script>
 
-<form name="nice" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+<form name="nice" method="POST">
     <p style="display: none">
         <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
     </p>
