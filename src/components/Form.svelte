@@ -5,6 +5,7 @@
 </script>
 
 <form name="nice" method="POST">
+    <input type="hidden" name="form-name" value="nice" />
     <p style="display: none">
         <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
     </p>
