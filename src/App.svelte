@@ -2,7 +2,7 @@
     import {Checkbox, Form} from './components';
 
     // remove hidden form
-    document.querySelector('#remove-me').remove();
+    // document.querySelector('#remove-me').remove();
 
     let isDark = false;
 </script>
