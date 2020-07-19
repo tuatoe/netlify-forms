@@ -13,11 +13,13 @@
         <li>Recaptcha</li>
         <li>Netlify Form With Svelte</li>
     </ol>
-    <form name="example" action="/success" method="POST" netlify netlify-honeypot="bot-field">
+    <form name="example" action="/success" method="POST" netlify netlify-honeypot="bot-field" data-netlify-recaptcha="true">
         <p class="hidden">
             <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
           </p>
         <input name="something" type="text">
+        <div data-netlify-recaptcha="true"></div>
+          <button>submit</button>
     </form>
 </body>
 </html>
