@@ -2,10 +2,10 @@
     import validate from './validate';
 
     export let label;
-    export let id;
+    export let name;
     export let isDark;
     export let required = true;
 </script>
 
-<label for={id}>{label}</label>
-<textarea use:validate {required} id={id} name={id} class="nes-textarea" class:is-dark={isDark}></textarea>
+<label for={name}>{label}</label>
+<textarea use:validate {required} id={name} {name} class="nes-textarea" class:is-dark={isDark}></textarea>
