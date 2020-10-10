@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,12 +9,14 @@
     <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
     <link href="https://unpkg.com/nes.css@2.3.0/css/nes.min.css" rel="stylesheet" />
     <style>
-        html, body {
+        html,
+        body {
             box-sizing: border-box;
             padding: 0;
             margin: 0;
         }
-        body > .nes-container {
+
+        body>.nes-container {
             max-width: 800px;
             height: calc(100vh - 100px);
             position: absolute;
@@ -22,21 +25,23 @@
             overflow-y: scroll;
             margin: 0 !important;
         }
-        body > .nes-container > a {
+
+        body>.nes-container>a {
             position: absolute;
             bottom: 5px;
             right: 5px;
         }
     </style>
 </head>
+
 <body>
     <h1 class="nes-text is-success">HOMEPAGE</h1>
     <div class="nes-container is-rounded is-dark">
         <h2 class="nes-text is-success">Give me your data!</h2>
-        
+
         <form name="mean" method="POST" action="/success" netlify data-netlify-recaptcha="true">
             <div class="nes-field">
-                <label for="email_field">What is your email?</label>
+                <label for="email_field">What is your email? please</label>
                 <input required type="email" id="email_field" name="email" class="nes-input is-dark">
             </div>
             <br>
@@ -63,8 +68,9 @@
             <br>
             <button class="nes-btn is-success">Submit</button>
         </form>
-        
+
         <a href="/app">Or go to this form -></a>
     </div>
 </body>
+
 </html>
